@@ -1,6 +1,7 @@
 {
   "name": "previsao-tempo-dio",
-  "version": "0.0.0",
+  "author": "GeorgetonJr",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
