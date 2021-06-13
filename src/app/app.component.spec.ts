@@ -1,16 +1,12 @@
-import { TestBed, async } from '@angular/core/testing';
+import { async, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule],
+      declarations: [AppComponent],
     }).compileComponents();
   }));
 
@@ -20,16 +16,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Previsao-Tempo-DIO'`, () => {
+  it(`should have as title 'app-weather'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Previsao-Tempo-DIO');
+    expect(app.title).toEqual('app-weather');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('Previsao-Tempo-DIO app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain(
+      'app-weather app is running!'
+    );
   });
 });

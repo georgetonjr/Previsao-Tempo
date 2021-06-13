@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Previsao-Tempo-DIO"
+    }
+  },
+  "defaultProject": "Previsao-Tempo-DIO",
+  "cli": {
+    "analytics": false
+  }
 }
